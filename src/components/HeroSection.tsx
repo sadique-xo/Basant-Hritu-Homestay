@@ -10,15 +10,11 @@ export default function HeroSection() {
     >
       {/* Background image placeholder */}
       <div className="absolute inset-0">
-        <img
-          src="/images/hero-bg.jpg"
-          alt="Kanchenjunga view from terrace"
-          className="w-full h-full object-cover"
-          onError={(e) => {
-            const t = e.currentTarget;
-            t.style.display = "none";
-          }}
-        />
+          <img
+            src="/images/hero-bg.jpg"
+            alt="Kanchenjunga view from terrace"
+            className="w-full h-full object-cover"
+          />
         {/* Fallback gradient when image missing */}
         <div
           className="absolute inset-0"
