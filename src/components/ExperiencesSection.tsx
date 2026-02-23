@@ -1,3 +1,5 @@
+"use client";
+
 import { Flame, UtensilsCrossed, Laptop, Compass } from "lucide-react";
 
 const experiences = [
