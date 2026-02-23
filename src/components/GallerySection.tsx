@@ -12,12 +12,19 @@ const galleryItems = [
   { src: "/images/mountain.webp", alt: "Kalimpong town view", category: "views", span: "" },
   { src: "/images/bonfire.webp", alt: "BBQ on terrace", category: "terrace", span: "" },
   { src: "/images/Kitchen-Image.webp", alt: "Kitchen and dining area", category: "food", span: "" },
-  { src: "/images/bhh-image.webp", alt: "Garden and property exterior", category: "views", span: "" },
   { src: "/images/Room-workspace.jpg", alt: "Workstation with a view", category: "rooms", span: "" },
   { src: "/images/rainy-view.jpg", alt: "Rainy mountain view", category: "views", span: "" },
   { src: "/images/room-work-view.jpg", alt: "Mountain view from workspace", category: "rooms", span: "" },
   { src: "/images/view-from-room.jpg", alt: "View from the bedroom window", category: "views", span: "" },
   { src: "/images/wind0w-view.jpg", alt: "Window overlooking the valley", category: "views", span: "" },
+  { src: "/images/food-large.webp", alt: "Local breakfast served fresh", category: "food", span: "" },
+  { src: "/images/food2-large.webp", alt: "Traditional Nepali Thali", category: "food", span: "" },
+  { src: "/images/food3-large.webp", alt: "Freshly prepared momos", category: "food", span: "" },
+  { src: "/images/room1001-large.webp", alt: "Cozy room detail", category: "rooms", span: "" },
+  { src: "/images/room1002-large.webp", alt: "Sunlit bedroom corner", category: "rooms", span: "" },
+  { src: "/images/view22-large.webp", alt: "Sunset over Kalimpong", category: "views", span: "" },
+  { src: "/images/views-large.webp", alt: "Panoramic mountain view", category: "views", span: "" },
+  { src: "/images/views2-large.webp", alt: "Misty valley view", category: "views", span: "" },
 ];
 
 const categories = ["all", "views", "rooms", "terrace", "food"];
