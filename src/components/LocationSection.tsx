@@ -67,7 +67,7 @@ export default function LocationSection() {
             {/* Map embed placeholder */}
             <div className="rounded-2xl overflow-hidden shadow-md mb-6 h-72 bg-green-50 relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.502!2d88.4793!3d27.0674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e43f80fd00c7ad%3A0x1234567890abcdef!2sKalimpong%2C+West+Bengal%2C+India!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.1628107977363!2d88.45797161170925!3d27.056608376463917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e423c2ac360631%3A0xc98033181a3243f!2sBasant%20Hritu%20Homestay!5e0!3m2!1sen!2sin!4v1771880808384!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
