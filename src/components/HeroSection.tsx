@@ -10,21 +10,14 @@ export default function HeroSection() {
     >
       {/* Background image placeholder */}
       <div className="absolute inset-0">
-          <img
-            src="/images/hero-bg.jpg"
-            alt="Kanchenjunga view from terrace"
-            className="w-full h-full object-cover"
-          />
-        {/* Fallback gradient when image missing */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(160deg, oklch(0.25 0.08 200) 0%, oklch(0.18 0.06 160) 40%, oklch(0.12 0.04 140) 100%)",
-          }}
+        <img
+          src="/images/hero-image-main.webp"
+          alt="Kanchenjunga view from terrace"
+          className="w-full h-full object-cover"
         />
+
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Mountain silhouette decoration */}
@@ -108,15 +101,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Scroll cue */}
-        <a
-          href="#about"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-white/50 hover:text-white/80 transition-colors"
-          aria-label="Scroll down"
-        >
-          <span className="text-xs tracking-widest uppercase">Explore</span>
-          <ChevronDown size={20} className="animate-bounce" />
-        </a>
       </div>
 
       {/* Stats bar */}

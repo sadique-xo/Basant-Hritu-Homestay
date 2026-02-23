@@ -43,14 +43,14 @@ export default function AboutSection() {
               <div className="space-y-4">
                 <div className={`rounded-2xl overflow-hidden aspect-[3/4] shadow-md ${collagePlaceholders[0]}`}>
                   <img
-                    src="/images/about-1.jpg"
+                    src="/images/hero-image.webp"
                     alt="Homestay terrace with mountain view"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className={`rounded-2xl overflow-hidden aspect-square shadow-md ${collagePlaceholders[1]}`}>
                   <img
-                    src="/images/about-2.jpg"
+                    src="/images/room-image2.webp"
                     alt="Cozy room interior"
                     className="w-full h-full object-cover"
                   />
@@ -59,14 +59,14 @@ export default function AboutSection() {
               <div className="space-y-4 pt-8">
                 <div className={`rounded-2xl overflow-hidden aspect-square shadow-md ${collagePlaceholders[2]}`}>
                   <img
-                    src="/images/about-3.jpg"
+                    src="/images/home-meal.webp"
                     alt="Home-cooked meal"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className={`rounded-2xl overflow-hidden aspect-[3/4] shadow-md ${collagePlaceholders[3]}`}>
                   <img
-                    src="/images/about-4.jpg"
+                    src="/images/room3.webp"
                     alt="Bonfire on terrace"
                     className="w-full h-full object-cover"
                   />

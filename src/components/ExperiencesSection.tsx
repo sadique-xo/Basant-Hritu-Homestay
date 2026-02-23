@@ -9,7 +9,7 @@ const experiences = [
     subtitle: "Under the Himalayan Stars",
     description:
       "As dusk falls over Kanchenjunga, gather around our terrace bonfire. Roast marshmallows, grill over the BBQ, stargaze, and share stories with fellow travellers in the crisp mountain air.",
-    image: "/images/exp-bonfire.jpg",
+    image: "/images/bonfire.webp",
     color: "from-orange-900/80 to-amber-900/60",
     fallbackColor: "from-orange-700 to-amber-800",
     tags: ["Outdoor Bonfire", "BBQ / Grill", "Stargazing", "Terrace"],
@@ -20,7 +20,7 @@ const experiences = [
     subtitle: "Prepared with Love",
     description:
       "Experience authentic Nepali and Gorkha cuisine — delicious dal bhat, momos, thukpa, and seasonal vegetables, all prepared by Menuka Di and the team. Or use the fully equipped kitchen for your own culinary adventures.",
-    image: "/images/exp-food.jpg",
+    image: "/images/home-meal.webp",
     color: "from-green-900/80 to-teal-900/60",
     fallbackColor: "from-green-700 to-teal-800",
     tags: ["Breakfast Included", "Local Cuisine", "Shared Kitchen", "Veg Options"],
@@ -31,7 +31,7 @@ const experiences = [
     subtitle: "Productivity with a View",
     description:
       "Uninterrupted power supply, high-speed Wi-Fi throughout, and a dedicated working desk in every room. Attend your meetings with Mt. Kanchenjunga in the background — the world's most beautiful office.",
-    image: "/images/exp-work.jpg",
+    image: "/images/room222.webp",
     color: "from-blue-900/80 to-indigo-900/60",
     fallbackColor: "from-blue-800 to-indigo-900",
     tags: ["High-Speed Wi-Fi", "Working Desk", "UPS Power", "Quiet Zone"],
@@ -42,7 +42,7 @@ const experiences = [
     subtitle: "Gateway to the Himalayas",
     description:
       "Step out from your doorstep into one of the most scenic hill towns in India. The owner arranges car rentals at fair rates — no seasonal hikes — so you can explore Durpin Monastery, Deolo Hill, Lava, Rishop, Darjeeling, and Sikkim at your own pace.",
-    image: "/images/exp-explore.jpg",
+    image: "/images/mountain.webp",
     color: "from-purple-900/80 to-pink-900/60",
     fallbackColor: "from-purple-800 to-pink-900",
     tags: ["Car Rental (no hikes)", "Darjeeling Day Trip", "Sikkim", "Local Trails"],
@@ -74,9 +74,8 @@ export default function ExperiencesSection() {
           {experiences.map((exp, idx) => (
             <div
               key={exp.title}
-              className={`relative rounded-2xl overflow-hidden min-h-[360px] flex flex-col justify-end group ${
-                idx === 0 ? "md:col-span-2 lg:col-span-1" : ""
-              }`}
+              className={`relative rounded-2xl overflow-hidden min-h-[360px] flex flex-col justify-end group ${idx === 0 ? "md:col-span-2 lg:col-span-1" : ""
+                }`}
             >
               {/* Background image */}
               <div

@@ -4,15 +4,15 @@ import { useState } from "react";
 import { X, ZoomIn } from "lucide-react";
 
 const galleryItems = [
-  { src: "/images/gallery-1.jpg", alt: "Kanchenjunga view from terrace", category: "views", span: "col-span-2 row-span-2" },
-  { src: "/images/gallery-2.jpg", alt: "Terrace bonfire at night", category: "terrace", span: "" },
-  { src: "/images/gallery-3.jpg", alt: "Cozy bedroom interior", category: "rooms", span: "" },
-  { src: "/images/gallery-4.jpg", alt: "Home-cooked breakfast spread", category: "food", span: "" },
-  { src: "/images/gallery-5.jpg", alt: "Room with mountain view window", category: "rooms", span: "" },
-  { src: "/images/gallery-6.jpg", alt: "Kalimpong town view", category: "views", span: "" },
-  { src: "/images/gallery-7.jpg", alt: "BBQ on terrace", category: "terrace", span: "" },
-  { src: "/images/gallery-8.jpg", alt: "Traditional Nepali meal", category: "food", span: "" },
-  { src: "/images/gallery-9.jpg", alt: "Garden and property exterior", category: "views", span: "" },
+  { src: "/images/mountain2.webp", alt: "Kanchenjunga view from terrace", category: "views", span: "col-span-2 row-span-2" },
+  { src: "/images/Bonfire-image-terrace.webp", alt: "Terrace bonfire at night", category: "terrace", span: "" },
+  { src: "/images/room-image.webp", alt: "Cozy bedroom interior", category: "rooms", span: "" },
+  { src: "/images/home-meal.webp", alt: "Home-cooked breakfast spread", category: "food", span: "" },
+  { src: "/images/room-image4.webp", alt: "Room with mountain view window", category: "rooms", span: "" },
+  { src: "/images/mountain.webp", alt: "Kalimpong town view", category: "views", span: "" },
+  { src: "/images/bonfire.webp", alt: "BBQ on terrace", category: "terrace", span: "" },
+  { src: "/images/Kitchen-Image.webp", alt: "Kitchen and dining area", category: "food", span: "" },
+  { src: "/images/bhh-image.webp", alt: "Garden and property exterior", category: "views", span: "" },
 ];
 
 const categories = ["all", "views", "rooms", "terrace", "food"];
@@ -63,11 +63,10 @@ export default function GallerySection() {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-medium capitalize transition-all duration-200 ${
-                active === cat
+              className={`px-5 py-2 rounded-full text-sm font-medium capitalize transition-all duration-200 ${active === cat
                   ? "bg-green-700 text-white shadow"
                   : "bg-white text-gray-600 hover:bg-green-50 border border-gray-200"
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -79,9 +78,8 @@ export default function GallerySection() {
           {filtered.map((item, i) => (
             <div
               key={i}
-              className={`relative rounded-xl overflow-hidden cursor-pointer group ${
-                i === 0 && active === "all" ? "col-span-2 row-span-2" : "aspect-square"
-              } ${i === 0 && active === "all" ? "aspect-auto min-h-[300px]" : ""}`}
+              className={`relative rounded-xl overflow-hidden cursor-pointer group ${i === 0 && active === "all" ? "col-span-2 row-span-2" : "aspect-square"
+                } ${i === 0 && active === "all" ? "aspect-auto min-h-[300px]" : ""}`}
               onClick={() => setLightbox(galleryItems.indexOf(item))}
             >
               <div
