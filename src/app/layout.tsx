@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     "A cozy Himalayan homestay in Kalimpong with panoramic Kanchenjunga views, home-cooked meals, bonfire nights, and high-speed Wi-Fi. Women-led, artist-friendly, and pet-friendly.",
   keywords:
     "homestay in Kalimpong, Kalimpong homestay Kanchenjunga view, budget homestay Kalimpong, work from mountains, pet friendly homestay, Basant Hritu Homestay",
+  icons: {
+    icon: "/images/bhh.png",
+    apple: "/images/bhh.png",
+  },
 };
 
 export default function RootLayout({
