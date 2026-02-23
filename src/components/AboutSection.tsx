@@ -1,3 +1,5 @@
+"use client";
+
 import { Heart, Camera, Users, Leaf } from "lucide-react";
 
 const pillars = [
