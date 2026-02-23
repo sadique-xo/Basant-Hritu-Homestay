@@ -13,6 +13,11 @@ const galleryItems = [
   { src: "/images/bonfire.webp", alt: "BBQ on terrace", category: "terrace", span: "" },
   { src: "/images/Kitchen-Image.webp", alt: "Kitchen and dining area", category: "food", span: "" },
   { src: "/images/bhh-image.webp", alt: "Garden and property exterior", category: "views", span: "" },
+  { src: "/images/Room-workspace.jpg", alt: "Workstation with a view", category: "rooms", span: "" },
+  { src: "/images/rainy-view.jpg", alt: "Rainy mountain view", category: "views", span: "" },
+  { src: "/images/room-work-view.jpg", alt: "Mountain view from workspace", category: "rooms", span: "" },
+  { src: "/images/view-from-room.jpg", alt: "View from the bedroom window", category: "views", span: "" },
+  { src: "/images/wind0w-view.jpg", alt: "Window overlooking the valley", category: "views", span: "" },
 ];
 
 const categories = ["all", "views", "rooms", "terrace", "food"];
@@ -64,8 +69,8 @@ export default function GallerySection() {
               key={cat}
               onClick={() => setActive(cat)}
               className={`px-5 py-2 rounded-full text-sm font-medium capitalize transition-all duration-200 ${active === cat
-                  ? "bg-green-700 text-white shadow"
-                  : "bg-white text-gray-600 hover:bg-green-50 border border-gray-200"
+                ? "bg-green-700 text-white shadow"
+                : "bg-white text-gray-600 hover:bg-green-50 border border-gray-200"
                 }`}
             >
               {cat}
@@ -99,10 +104,8 @@ export default function GallerySection() {
                   className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                 />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                <p className="text-white text-xs font-medium">{item.alt}</p>
-              </div>
             </div>
+
           ))}
         </div>
 
@@ -140,10 +143,8 @@ export default function GallerySection() {
                 }}
               />
             </div>
-            <p className="text-white/70 text-sm text-center mt-3">
-              {galleryItems[lightbox].alt}
-            </p>
           </div>
+
         </div>
       )}
     </section>
