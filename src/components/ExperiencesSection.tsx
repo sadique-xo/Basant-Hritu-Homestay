@@ -31,7 +31,7 @@ const experiences = [
     subtitle: "Productivity with a View",
     description:
       "Uninterrupted power supply, high-speed Wi-Fi throughout, and a dedicated working desk in every room. Attend your meetings with Mt. Kanchenjunga in the background — the world's most beautiful office.",
-    image: "/images/room222.webp",
+    image: "/images/room1001-large.webp",
     color: "from-blue-900/80 to-indigo-900/60",
     fallbackColor: "from-blue-800 to-indigo-900",
     tags: ["High-Speed Wi-Fi", "Working Desk", "UPS Power", "Quiet Zone"],
