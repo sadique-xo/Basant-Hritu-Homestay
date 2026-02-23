@@ -16,6 +16,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://basant-hritu-homestay.sadique.co"),
   title: "Basant Hritu Homestay | Kalimpong, West Bengal",
   description:
     "A cozy Himalayan homestay in Kalimpong with panoramic Kanchenjunga views, home-cooked meals, bonfire nights, and high-speed Wi-Fi. Women-led, artist-friendly, and pet-friendly.",
@@ -24,6 +25,33 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/bhh.png",
     apple: "/images/bhh.png",
+  },
+  openGraph: {
+    title: "Basant Hritu Homestay | Kalimpong, West Bengal",
+    description:
+      "A cozy Himalayan homestay in Kalimpong with panoramic Kanchenjunga views, home-cooked meals, bonfire nights, and high-speed Wi-Fi.",
+    url: "https://basant-hritu-homestay.sadique.co/",
+    siteName: "Basant Hritu Homestay",
+    images: [
+      {
+        url: "/images/social-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Basant Hritu Homestay - A cozy Himalayan getaway",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Basant Hritu Homestay | Kalimpong, West Bengal",
+    description:
+      "A cozy Himalayan homestay in Kalimpong with panoramic Kanchenjunga views.",
+    images: ["/images/social-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://basant-hritu-homestay.sadique.co/",
   },
 };
 
