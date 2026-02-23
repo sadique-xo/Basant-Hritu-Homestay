@@ -1,12 +1,13 @@
 "use client";
 
 import {
-  Facebook,
   Instagram,
+  MessageCircle,
   Mail,
   Phone,
   MapPin,
   ExternalLink,
+  Heart,
 } from "lucide-react";
 
 const bookingLinks = [
@@ -50,18 +51,22 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-5">
               <a
-                href="#"
-                className="w-9 h-9 rounded-full bg-green-800 hover:bg-green-600 flex items-center justify-center transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={16} />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/basanthritukalimpong/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-green-800 hover:bg-green-600 flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={16} />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=918420066596"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-green-800 hover:bg-green-600 flex items-center justify-center transition-colors"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle size={16} />
               </a>
             </div>
           </div>
@@ -152,9 +157,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-green-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-green-500">
-          <p>© {new Date().getFullYear()} Basant Hritu Homestay. All rights reserved.</p>
-          <p>Registered with Kalimpong Police / Tourism · Kalimpong, West Bengal 734301</p>
+        <div className="border-t border-green-800 mt-12 pt-8 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs text-green-500 text-center">
+          <span>© {new Date().getFullYear()} Basant Hritu Homestay. All rights reserved.</span>
+          <span className="hidden sm:inline" aria-hidden="true">·</span>
+          <span>Registered with Kalimpong Police / Tourism · Kalimpong, West Bengal 734301</span>
+          <span className="hidden sm:inline" aria-hidden="true">·</span>
+          <span className="inline-flex items-center gap-1">
+            built with <Heart className="w-3 h-3 text-red-500 fill-current" /> by{" "}
+            <a
+              href="https://www.sadique.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors underline underline-offset-2 font-medium"
+            >
+              sadique
+            </a>
+          </span>
         </div>
       </div>
     </footer>
