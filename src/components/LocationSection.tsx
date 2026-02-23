@@ -1,3 +1,5 @@
+"use client";
+
 import { MapPin, Clock, Car, Plane, Train, Navigation } from "lucide-react";
 
 const distances = [
